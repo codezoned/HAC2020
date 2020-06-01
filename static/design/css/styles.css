@@ -1,0 +1,159 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+}
+
+.nav-links {
+	display: flex;
+	list-style: none;
+	width: 50%;
+	min-height: 100%;
+	align-items: center;
+	justify-content: space-around;
+	margin-left: auto;
+}
+
+.nav-list {
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0px;
+}
+
+.grid-child-1 {
+}
+
+.logo-div {
+	width: 50%;
+	margin: auto;
+	position: fixed;
+	height: 100%;
+}
+
+.logo-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25%;
+	width: 55%;
+}
+
+.grid-child-2 {
+}
+
+@media screen and (min-height: 1200px) {
+	.logo-img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 35%;
+		width: 55%;
+	}
+}
+
+@media screen and (max-width: 810px) {
+	/* To test size  */
+	/* body {
+		display: none;
+	} */
+
+	nav .brand-logo {
+		font-size: 1.1rem !important;
+	}
+
+	.line {
+		width: 30px;
+		height: 4.5px;
+		background-color: #ea6fa5;
+		margin: 5px;
+	}
+
+	nav {
+		position: relative;
+	}
+
+	.hamburger {
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 50%;
+		transform: translate(-5%, -50%);
+		z-index: 2;
+	}
+
+	.nav-links {
+		position: relative !important;
+		background-color: #78c1ca;
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+
+		/* creating path using clip-path  */
+		clip-path: circle(100px at 90% -10%);
+		-webkit-clip-path: circle(100px at 90% -10%);
+		transition: all 1.1s ease-out;
+		pointer-events: none;
+	}
+
+	.nav-links.open {
+		clip-path: circle(1500px at 90% -10%);
+		-webkit-clip-path: circle(1500px at 90% -10%);
+		pointer-events: all;
+	}
+
+	.nav-links li {
+		opacity: 0;
+	}
+	.nav-list {
+		font-size: 25px;
+	}
+
+	.nav-links li:nth-child(1) {
+		transition: all 0.5s ease 0.12s;
+	}
+	.nav-links li:nth-child(2) {
+		transition: all 0.5s ease 0.225s;
+	}
+	.nav-links li:nth-child(3) {
+		transition: all 0.5s ease 0.33s;
+	}
+	.nav-links li:nth-child(4) {
+		transition: all 0.5s ease 0.435s;
+	}
+	.nav-links li:nth-child(5) {
+		transition: all 0.5s ease 0.54s;
+	}
+
+	li.fade {
+		opacity: 1;
+	}
+
+	/* BODY  */
+	.grid-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 0px;
+	}
+
+	.grid-child-1 {
+	}
+
+	.logo-div {
+		position: relative;
+		height: ;
+	}
+
+	.logo-img {
+	}
+	.grid-child-2 {
+	}
+}
