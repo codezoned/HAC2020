@@ -1,3 +1,13 @@
+@font-face {
+	font-family: quicksand;
+	src: url('../fonts/Quicksand/Quicksand-Regular.ttf');
+}
+
+@font-face {
+	font-family: profontwindows;
+	src: url('../fonts/ProFontWindows/ProFontWindows.ttf');
+}
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -6,21 +16,6 @@
 
 body {
 	background-color: black;
-}
-
-.nav-links {
-	display: flex;
-	list-style: none;
-	width: 50%;
-	min-height: 100%;
-	align-items: center;
-	justify-content: space-around;
-	margin-left: auto;
-}
-
-.nav-list {
-	text-decoration: none;
-	font-size: 17px;
 }
 
 .grid-container {
@@ -48,6 +43,21 @@ body {
 }
 
 .grid-child-2 {
+	justify-content: space-around;
+}
+
+.center-text-div {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 35%;
+	text-align: left;
+}
+
+.grid-container-small {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-gap: 0px;
 }
 
 @media screen and (min-height: 1200px) {
@@ -56,27 +66,21 @@ body {
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 35%;
-		width: 55%;
+		width: 50%;
 	}
 }
 
+.inp-size {
+	border: white solid 2px !important;
+	height: 30px !important;
+}
+
+.inp-size-larger {
+	border: white solid 2px !important;
+	height: 34px;
+}
+
 @media screen and (max-width: 810px) {
-	/* To test size  */
-	/* body {
-		display: none;
-	} */
-
-	nav .brand-logo {
-		font-size: 1.1rem !important;
-	}
-
-	.line {
-		width: 30px;
-		height: 4.5px;
-		background-color: #ea6fa5;
-		margin: 5px;
-	}
-
 	nav {
 		position: relative;
 	}
@@ -88,53 +92,6 @@ body {
 		top: 50%;
 		transform: translate(-5%, -50%);
 		z-index: 2;
-	}
-
-	.nav-links {
-		position: relative !important;
-		background-color: #78c1ca;
-		height: 100vh;
-		width: 100%;
-		flex-direction: column;
-
-		/* creating path using clip-path  */
-		clip-path: circle(100px at 90% -10%);
-		-webkit-clip-path: circle(100px at 90% -10%);
-		transition: all 1.1s ease-out;
-		pointer-events: none;
-	}
-
-	.nav-links.open {
-		clip-path: circle(1500px at 90% -10%);
-		-webkit-clip-path: circle(1500px at 90% -10%);
-		pointer-events: all;
-	}
-
-	.nav-links li {
-		opacity: 0;
-	}
-	.nav-list {
-		font-size: 25px;
-	}
-
-	.nav-links li:nth-child(1) {
-		transition: all 0.5s ease 0.12s;
-	}
-	.nav-links li:nth-child(2) {
-		transition: all 0.5s ease 0.225s;
-	}
-	.nav-links li:nth-child(3) {
-		transition: all 0.5s ease 0.33s;
-	}
-	.nav-links li:nth-child(4) {
-		transition: all 0.5s ease 0.435s;
-	}
-	.nav-links li:nth-child(5) {
-		transition: all 0.5s ease 0.54s;
-	}
-
-	li.fade {
-		opacity: 1;
 	}
 
 	/* BODY  */
