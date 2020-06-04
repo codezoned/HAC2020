@@ -15,7 +15,7 @@
 }
 
 body {
-	background-color: black;
+	background-color: #070707;
 }
 
 .grid-container {
@@ -28,18 +28,20 @@ body {
 }
 
 .logo-div {
-	width: 50%;
+	width: 47.5%;
 	margin: auto;
 	position: fixed;
-	height: 100%;
+	/* height: 100%; */
+	/* overflow-y: scroll; */
+	/* overflow-x: hidden; */
 }
 
 .logo-img {
 	display: block;
 	margin-left: auto;
-	margin-right: auto;
-	margin-top: 25%;
-	width: 55%;
+	margin-right: 27.5%;
+	margin-top: 32.5%;
+	width: 50%;
 }
 
 .grid-child-2 {
@@ -52,6 +54,12 @@ body {
 	margin-right: auto;
 	margin-top: 35%;
 	text-align: left;
+}
+
+.about-text {
+	margin-top: 80%;
+	/* padding-bottom: 30%; */
+	padding-right: 17.5%;
 }
 
 .grid-container-small {
@@ -106,11 +114,27 @@ body {
 
 	.logo-div {
 		position: relative;
-		height: ;
+		width: 100%;
+	}
+
+	.center-text-div {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 50%;
+		/* text-align: left; */
 	}
 
 	.logo-img {
+		width: 95%;
+		margin-left: 2%;
 	}
 	.grid-child-2 {
+	}
+	.about-text {
+		margin-top: 60%;
+		padding-bottom: 30%;
+		padding-right: 5%;
+		padding-left: 5%;
 	}
 }
