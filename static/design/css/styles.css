@@ -44,6 +44,11 @@ body {
 	width: 50%;
 }
 
+.covid-class {
+	font-size: 5rem;
+	font-family: quicksand;
+}
+
 .grid-child-2 {
 	justify-content: space-around;
 }
@@ -60,6 +65,12 @@ body {
 	margin-top: 80%;
 	/* padding-bottom: 30%; */
 	padding-right: 17.5%;
+	text-align: justify;
+}
+.about-head {
+	text-align: left;
+	padding-right: 5%;
+	padding-left: 5%;
 }
 
 .grid-container-small {
@@ -70,18 +81,48 @@ body {
 
 .grid-container-2 {
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 1fr 1fr;
 	grid-gap: 0px;
 }
 
-.grid-container-small-2 {
+/* .grid-container-small-2 {
 	text-align: center;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 5%;
+} */
+
+.grid-child-3 {
+	margin-top: 40%;
+}
+
+.sponsor-section {
+	margin-top: 60%;
+	/* padding-bottom: 30%; */
+	padding-right: 17.5%;
+	margin-bottom: 10%;
+	width: 100%;
 }
 .sponsor-logos {
-	width: 40%;
+	width: 60%;
+}
+
+.sponsor-text {
+	font-size: 2em;
+	font-family: quicksand;
+	color: #eeeeee;
+	text-align: left;
+	/* padding-left: 5%; */
+
+	margin-top: 5%;
+	margin-bottom: 1%;
+}
+
+.details {
+	margin-top: 30%;
+	/* padding-bottom: 30%; */
+	padding-right: 17.5%;
+	text-align: justify;
 }
 
 @media screen and (min-height: 1200px) {
@@ -97,6 +138,9 @@ body {
 @media screen and (min-height: 1500px) {
 	.about-text {
 		margin-top: 90%;
+	}
+	.sponsor-section {
+		margin-top: 25%;
 	}
 }
 
@@ -136,27 +180,50 @@ body {
 
 	.logo-div {
 		position: relative;
-		width: 100%;
+		width: 90%;
 	}
 
 	.center-text-div {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 50%;
+		margin-top: 15%;
 		/* text-align: left; */
+		text-align: center;
+	}
+
+	.grid-container-small {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 0px;
 	}
 
 	.logo-img {
-		width: 95%;
-		margin-left: 2%;
+		width: 90%;
+		margin-left: 2.5%;
+	}
+
+	.covid-class {
+		font-size: 24px;
+	}
+
+	.centered {
+		text-align: center;
 	}
 	.grid-child-2 {
 	}
 	.about-text {
-		margin-top: 60%;
-		padding-bottom: 30%;
+		margin-top: 40%;
+		/* padding-bottom: 30%; */
 		padding-right: 5%;
+		padding-left: 5%;
+		text-align: center;
+	}
+
+	.about-head {
+		text-align: center;
+		margin-bottom: 10%;
+		padding-right: 7.5%;
 		padding-left: 5%;
 	}
 
@@ -166,9 +233,34 @@ body {
 		grid-template-columns: 1fr;
 	}
 	.grid-container-small-2 div {
+		/* margin-bottom: 10%; */
+	}
+
+	.grid-child-3 {
+		margin-top: -40%;
+	}
+	.sponsor-section {
 		margin-bottom: 10%;
+		padding-right: 7.5%;
+		padding-left: 5%;
+	}
+	.sponsor-text {
+		font-size: 2em;
+		font-family: quicksand;
+		color: #eeeeee;
+		text-align: center;
+		margin-top: 5%;
+		margin-bottom: 1%;
 	}
 	.sponsor-logos {
-		width: 40%;
+		width: 100%;
+	}
+
+	.details {
+		margin-top: 40%;
+		/* padding-bottom: 30%; */
+		padding-right: 5%;
+		padding-left: 5%;
+		text-align: center;
 	}
 }

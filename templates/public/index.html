@@ -100,6 +100,12 @@
             bottom: 0;
         }
 
+        .button.-regular:hover {
+            color: #d52d30;
+            background: none;
+            border: solid #d52d30 2px;
+        }
+
 
     </style>
 
@@ -158,72 +164,64 @@
         </div>
 
          
-        <div class="grid-child-2" style="text-align: center; color: white;">
+        <div class="grid-child-2 centered" style="text-align: center; color: white;">
     
-            <div style="width: 100%; margin-bottom: 5%;" class="center-text-div"> 
-                <div style="font-size: 5rem; font-family: quicksand;">Code it for Covid.</div>
+            <div style="width: 100%;" class="center-text-div"> 
+                <div class="covid-class" style="">Code it for <span  id="codeit">Covid</span>.</div>
+                <div class="grid-container-small centered" style="width: 100%;">
+                    <a id="stay_updated" href="#"><div class="button -regular center"> Stay Updated</div></a>    
+                </div>
             </div>
 
-            <div class="grid-container-small" style="width: 100%;">
-                <a href="#"><div class="button -regular center inp-size-larger" style=""> Stay Updated</div></a>
-                
-            </div>
+
             
             
             <div id="about" class="section scrollspy about-text" style="">
-                <div style="padding: 2%; text-align: justify; font-size: 1.1rem;">
+                <h1 class="sponsor-text" style="padding: 10% 2%;">About</h1>
+                <div style="padding: 2%;font-size: 1.1rem;">
                     The long lockdowns have left people desiring to go out and socialise. The pandemic has left us with a heightened sense of precaution, one which might very well need to be carried forward. What makes us human is our ability to express ourselves but once our world reopens the precautions still need to be taken, meaning restricted interactions. To build a future where we can transcend these restrictions and continue to interact with our surroundings we need newer ways to interact with them.
 
                     HAC (Hack Against Covid) is a Hackathon that challenges students to build proactive technology and solutions to safeguard human interaction in the coming future post covid19 pandemic.
                     <br><br>
-                    Come join and contribute from the safety and comfort of your homes.
+                    Come join and contribute from the safety and comfort of your homes. <br><br>
+                    <a class="code-of-conduct" href="https://github.com/codezoned/code-of-conduct/blob/master/code-of-conduct.md" style="color: white;"><b>More details are coming along your way. But for no, please make sure you have read our <span style="color: #d52d30;"> code of conduct.</span></b></a> 
                     <div id="anchor-point" style="height: 1px;"></div>
 
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="grid-container-2" style="margin-top: 20%; background-color: #eeeeee; width: 100%;"> 
-        <div style="width: 100%; height: 100px; background-image: linear-gradient(#070707, #eeeeee);">
-
-        </div>  <br>
-        <div class="grid-child-3" style="">
-            <div id="sponsors" class="section scrollspy" style="margin-bottom: 10%; width: 90%; margin: 0 auto;">
-                <div class="grid-container-small-2">
-                    <div>
-                        <img class="sponsor-logos" src="..\..\static\design\images\github-logo.png" alt="" style="">
+            
+            
+            <div class="grid-child-3" style="">
+                <div id="sponsors" class="section scrollspy sponsor-section" style="width: 100%;">
+                <h1 class="sponsor-text" style="padding: 2%;">Sponsors</h1>
+                    
+                    <div class="grid-container-small-2" style=" padding: 10% 0;">
+                        <div>
+                            <img class="sponsor-logos" src="..\..\static\design\images\Github_Logo_White.png" alt="" style="">
+                        </div>
+                        <!-- <div>
+                            <img class="sponsor-logos" src="..\..\static\design\images\github-logo.png" alt="" style="">
+                        </div>
+                        <div>
+                            <img class="sponsor-logos" src="..\..\static\design\images\github-logo.png" alt="" style="">
+                        </div> -->
                     </div>
-                    <div>
-                        <img class="sponsor-logos" src="..\..\static\design\images\github-logo.png" alt="" style="">
-                    </div>
-                    <div>
-                        <img class="sponsor-logos" src="..\..\static\design\images\github-logo.png" alt="" style="">
-                    </div>
-                </div>
-            </div>      
-        </div><br>
-        <div style="width: 100%; height: 100px; background-image: linear-gradient(#eeeeee, #070707);">
-
-        </div>
-        <div style="height: 1000px;">
-
-        </div>
-
-        <!-- <div class="grid-child-4" style="text-align: center; color: white; height: 100vh;">
-            <div id="sponsors" class="section scrollspy" style="">
-                <h1 style="font-family: quicksand;">Sponsors</h1>
-                <div style="font-size: 4rem; margin-bottom: 30%;">
-                    Github <br>
-                    Dev.2
-                </div>
+                </div>      
             </div>
-        
-        </div> -->
 
+            <div class="details section scrollspy" style="margin-bottom: 25%;">
+                <h1 class="sponsor-text" style="padding: 10% 2%;">Hackathon Details</h1>
+                <a href="#stay_updated"><div style="padding: 2%;font-size: 1.4rem; text-align: left;">We'll be coming forward with the details soon. Till then, <span style="color: #d52d30;">Stay updated</span>.</div></a> 
+            </div>
+        </div>
     </div>
     
-        
+    <div style="  background-color: #212121; height: 37.5px; width: 100%; position: fixed; bottom: 0; text-align: center; padding-top: 5px;">
+            <a target="_blank" href="http://codezoned.com"><div style="color: #eeeeee; font-family: profontwindows; font-size: 19px;">With &#x2764; by <span style="color: #d52d30; font-size: 22px;">code</span><span style="color: white;font-size: 22px;">zoned</span><span style="color: #767777; font-size: 22px;">;</span></div></a>
+    </div>
+        <!-- d52d30
+        white
+        767777 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     
@@ -239,22 +237,22 @@
 
         var targetOffset = $("#anchor-point").offset().top;
 
-        var $w = $(window).scroll(function(){
-            if ( (screen.height<=1200) && ($w.scrollTop() > targetOffset-500) ) {  
-                $('.logo-div').hide(500);
-            } 
-            else if ( (screen.height<=1600) && ($w.scrollTop() > targetOffset-750) ) {  
+        // var $w = $(window).scroll(function(){
+        //     if ( (screen.height<=1200) && ($w.scrollTop() > targetOffset-500) ) {  
+        //         $('.logo-div').hide(500);
+        //     } 
+        //     else if ( (screen.height<=1600) && ($w.scrollTop() > targetOffset-350) ) {  
                 
-                $('.logo-div').hide(750);
-            }
-            else if ( (screen.height>1600) && ($w.scrollTop() > targetOffset- 900) ) {  
-                $('.logo-div').hide(1750);
-            }
-            else {
-                $('.logo-div').show(500);
-                // $('.logo-div').css({"position":"fixed"});
-            }
-        });
+        //         $('.logo-div').hide(750);
+        //     }
+        //     else if ( (screen.height>1600) && ($w.scrollTop() > targetOffset- 900) ) {  
+        //         $('.logo-div').hide(1750);
+        //     }
+        //     else {
+        //         $('.logo-div').show(500);
+        //         // $('.logo-div').css({"position":"fixed"});
+        //     }
+        // });
 
         // $(document).ready(function() {
 
@@ -267,6 +265,17 @@
             // $("link[rel=stylesheet]:not(:first)").attr({href : "style1.css"});
             // }
         // });
+
+        $(function() {
+            $('.-regular').hover(function() {
+                $('#codeit').css('color', '#d52d30');
+            }, function() {
+                // on mouseout, reset the background colour
+                $('#codeit').css('color', 'white');
+            });
+        });
+
     </script>
+
 </body>
 </html>
