@@ -184,18 +184,33 @@
         </div>
     </div>
 
-    <div class="grid-container" style="margin-top: 20%;">   
-        <!-- <div class="grid-child-3" style="text-align: center; color: white;;">
-            <div id="sponsors" class="section scrollspy" style="">
-                <h1 style="font-family: quicksand;">Sponsors</h1>
-                <div style="font-size: 4rem; margin-bottom: 30%;">
-                    Github <br>
-                    Dev.2
+    <div class="grid-container-2" style="margin-top: 20%; background-color: #eeeeee; width: 100%;"> 
+        <div style="width: 100%; height: 100px; background-image: linear-gradient(#070707, #eeeeee);">
+
+        </div>  <br>
+        <div class="grid-child-3" style="">
+            <div id="sponsors" class="section scrollspy" style="margin-bottom: 10%; width: 90%; margin: 0 auto;">
+                <div class="grid-container-small-2">
+                    <div>
+                        <img class="sponsor-logos" src="..\..\static\design\images\github-logo.png" alt="" style="">
+                    </div>
+                    <div>
+                        <img class="sponsor-logos" src="..\..\static\design\images\github-logo.png" alt="" style="">
+                    </div>
+                    <div>
+                        <img class="sponsor-logos" src="..\..\static\design\images\github-logo.png" alt="" style="">
+                    </div>
                 </div>
             </div>      
+        </div><br>
+        <div style="width: 100%; height: 100px; background-image: linear-gradient(#eeeeee, #070707);">
+
+        </div>
+        <div style="height: 1000px;">
+
         </div>
 
-        <div class="grid-child-4" style="text-align: center; color: white; height: 100vh;">
+        <!-- <div class="grid-child-4" style="text-align: center; color: white; height: 100vh;">
             <div id="sponsors" class="section scrollspy" style="">
                 <h1 style="font-family: quicksand;">Sponsors</h1>
                 <div style="font-size: 4rem; margin-bottom: 30%;">
@@ -225,17 +240,33 @@
         var targetOffset = $("#anchor-point").offset().top;
 
         var $w = $(window).scroll(function(){
-            if ( $w.scrollTop() > targetOffset-500 ) {  
-                 
-                // $('.logo-div').delay("slow").css({"position":"relative"});
+            if ( (screen.height<=1200) && ($w.scrollTop() > targetOffset-500) ) {  
                 $('.logo-div').hide(500);
-                // $('.logo-div').delay("slow").css({"position":"relative"});
-            } else {
-                // $('.logo-div').css({"position":"fixed"});
+            } 
+            else if ( (screen.height<=1600) && ($w.scrollTop() > targetOffset-750) ) {  
+                
+                $('.logo-div').hide(750);
+            }
+            else if ( (screen.height>1600) && ($w.scrollTop() > targetOffset- 900) ) {  
+                $('.logo-div').hide(1750);
+            }
+            else {
                 $('.logo-div').show(500);
                 // $('.logo-div').css({"position":"fixed"});
             }
         });
+
+        // $(document).ready(function() {
+
+            // if ((screen.width>=1024) && (screen.height>=768)) {
+            // alert('Screen size: 1024x768 or larger');
+            // $("link[rel=stylesheet]:not(:first)").attr({href : "style2.css"});
+            // }
+            // else {
+            // alert('Screen size: less than 1024x768, 800x600 maybe?');
+            // $("link[rel=stylesheet]:not(:first)").attr({href : "style1.css"});
+            // }
+        // });
     </script>
 </body>
 </html>

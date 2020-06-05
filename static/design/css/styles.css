@@ -68,6 +68,22 @@ body {
 	grid-gap: 0px;
 }
 
+.grid-container-2 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 0px;
+}
+
+.grid-container-small-2 {
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 5%;
+}
+.sponsor-logos {
+	width: 40%;
+}
+
 @media screen and (min-height: 1200px) {
 	.logo-img {
 		display: block;
@@ -75,6 +91,12 @@ body {
 		margin-right: auto;
 		margin-top: 35%;
 		width: 50%;
+	}
+}
+
+@media screen and (min-height: 1500px) {
+	.about-text {
+		margin-top: 90%;
 	}
 }
 
@@ -136,5 +158,17 @@ body {
 		padding-bottom: 30%;
 		padding-right: 5%;
 		padding-left: 5%;
+	}
+
+	.grid-container-small-2 {
+		text-align: center;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.grid-container-small-2 div {
+		margin-bottom: 10%;
+	}
+	.sponsor-logos {
+		width: 40%;
 	}
 }
